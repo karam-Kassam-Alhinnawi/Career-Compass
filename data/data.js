@@ -1,5 +1,5 @@
 import questionsCategoriesImg1 from '../src/assets/interest.webp';
-import questionsCategoriesImg2 from '../src/assets/craft.webp';
+import questionsCategoriesImg2 from '../src/assets/Craft.webp';
 import questionsCategoriesImg3 from '../src/assets/analisys.webp';
 import questionsCategoriesImg4 from '../src/assets/work.webp';
 import questionsCategoriesImg5 from '../src/assets/carrer.webp';
