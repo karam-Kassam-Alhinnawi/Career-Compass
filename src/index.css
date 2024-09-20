@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Lexend", sans-serif !important;
+}
+
+.hero{
+    background: url(./assets/hero.webp)  ;
+    background-size: cover;
+}
+
+.signupPage{
+    background: url(./assets/signup.webp);
+    background-size: cover;
+}
+
+.welcomePage{
+    background: url(./assets/welcome.jpg);
+    background-size: cover;
+}
+
+.progress-bar {
+    appearance: none;
+    height: 5px;
+    border-radius: 100px;
+      
+    /* Chrome and Safari */
+    &::-webkit-progress-bar {
+      background: #6d31ed63;
+      border-radius: 100px;
+    }
+  
+    &::-webkit-progress-value {
+      background-color: #6d31ed;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+  
+    /* Firefox */
+    &::-moz-progress-bar {
+        background-color: #6d31ed;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+  }
+
+@media (max-width: 600px){
+    .hero, .signupPage, .welcomePage{
+        background-position: center;
+    }
+}
