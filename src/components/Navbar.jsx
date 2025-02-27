@@ -17,11 +17,15 @@ export const Navbar = ({isAuthenticated}) => {
        <h2 className='lowercase font-bold text-lg md:text-3xl ml-2 cursor-pointer' 
        onClick={isAuthenticated ? () => navigate('/welcome') : () => navigate('/')}>CAREER COMPASS</h2>
        </div>
-      
+
+     {location.pathname !== "/welcome" && location.pathname !== "/quiz" && (
+
        <Button paddingX="20px" paddingY="8px" rounded="18px" location={location.pathname === 
         '/signup' || '/signupform' ? 'login' : 'signup'
        }>
-      {location.pathname === '/signup' || '/signupform' ? "Login" : "Sign Up"}</Button>
+      {location.pathname === '/signup' || '/signupform' ? "Login" : "Sign Up"}
+      </Button>
+     )}
 
     </div>
   )
